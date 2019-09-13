@@ -51,15 +51,15 @@
 
 ### Informazioni sul progetto
 
-  In questo capitolo raccogliere le informazioni relative al progetto, ad esempio:
+  Il progetto *Fiocco di neve* è stato realizzato da Adriano Chiriacò alla Scuola Arti e Mestieri a Trevano durante la lezione del modulo 306.
 
-  -   Allievo/i e docente/i coinvolti nel progetto e rispettivi ruoli,
+  I docenti responsabili sono:
+   -  Luca Muggiasca (luca.muggiasca@edu.ti.ch)
+   -  Geo Petrini (geo.petrini@edu.ti.ch)
 
-  -   scuola ,sezione, materia/e,
+L'inizio del progetto è avvenuto il 3.09.2019 mentre la fine è prevista il 20.12.2019.
 
-  -   date di inizio e termine di consegna,
 
-  -   …
 
 ### Abstract
 
@@ -176,15 +176,27 @@
 
   |**ID**	|**Nome**			|**Priorità**|**Vers**|**Note**  |
   |----|------------|--------|----|------|
-  |Req-01|L'applicativo deve essere scritto o in java o in javascript|1|1.0|...|
-  |Req-02|Creazione applicativo che genera triangolo bianco|1|1.0|...|
-  |Req-03|Possibilità di taglio tramite cursore con creazione degli appositi punti|1|1.0|...|
-  |Req-04|Possibilità di rimozione tramite cursore dei punti|2|1.0|...|
-  |Req-05|Possibilità di spostamento tramite cursore dei punti|2|1.0|...|
-  |Req-06|Sviluppo sito web contenente tutte le informazioni e il download dell'applictivo|1|1.0|...|
-  |Req-07|La generazione del fiocco di neve avviene tramite tasto "genera"|1|1.0|...|
-  |Req-08|La generazione avviene in tempo reale"|1|1.0|...|
-
+  |Req-01|L'applicativo deve essere scritto in java|1|1.0|...|
+  |Req-02|Deve esistere sito con descrizione software|1|1.0|...|
+  |Req-04|Deve essere possibile scaricare il software|1|1.0|...|
+  |Req-05|I tagli del triangolo devono poter essere fatti con il mouse|1|1.0|...|
+  |Req-06|Deve esserci un'interfaccia grafica|1|1.0|...|
+  |Req-07|L'area di lavoro deve essere un triangolo|1|1.0|...|
+  |Req-08|Deve essere possibile resettare i punti registrati|1|1.0|...|
+  |Req-09|Deve esistere il tasto genera fiocco|1|1.0|...|
+  |Req-10|La generazione deve avvenire in tempo reale|2|1.0|...|
+  |Req-11|I punti devono poter essere spostati|2|1.0|...|
+  |Req-12|I punti devono poter essere rimossi|2|1.0|...|
+  |Req-13|Il lavoro deve poter essere salvato|1|1.0|...|
+  |Req-14|Il salvataggio deve essere fatto in formato PNG o SVG|1|1.0|...|
+  |Req-15|Il salvataggio deve avere dimensioni definite dall'utente|1|1.0|...|
+  |Req-16|Deve essere possibile salvare i punti di taglio|1|1.0|...|
+  |Req-17|La finestra deve essere ridimensionabile|1|1.0|...|
+  |Req-18|Le dimensioni minime della finestra è di 1024x768|1|1.0|...|
+  |Req-19|I colori del sito devono essere adatti anche a persone con problemi di daltonismo|1|1.0|...|
+  |Req-20|Il sito deve avere la lista dei requisiti di sistema minimi, la JRE e una guida con screenshots|1|1.0|...|
+  |Req-21|Si possono avere più poligoni di taglio|1|1.0|...|
+  |Req-22|L'applicativo dev essere fornito tramita jar.|1|1.0|...|
 
 
 

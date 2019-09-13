@@ -22,5 +22,4 @@ Essendo il mio primo diario non avevo una pianificazione
 
 ## Programma di massima per la prossima giornata di lavoro
 - Creare documento con la lista delle specifiche
-- Inizio progettazione struttura
-- (Applicazione della struttura)
+- Inizio completamento della documentazione
