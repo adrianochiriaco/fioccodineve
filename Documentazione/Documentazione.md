@@ -176,9 +176,14 @@
 
   |**ID**	|**Nome**			|**Priorità**|**Vers**|**Note**  |
   |----|------------|--------|----|------|
-  |Req-12|Dovrà esserci una maschera di login|1|1.0|...|
-  |Req-13|Si dovranno poter immettere nuovi allievi|1|1.0|...|
-  |Req-14|Dovrà essere possibile la ricerca di allievi|1|1.0|...|
+  |Req-01|L'applicativo deve essere scritto o in java o in javascript|1|1.0|...|
+  |Req-02|Creazione applicativo che genera triangolo bianco|1|1.0|...|
+  |Req-03|Possibilità di taglio tramite cursore con creazione degli appositi punti|1|1.0|...|
+  |Req-04|Possibilità di rimozione tramite cursore dei punti|2|1.0|...|
+  |Req-05|Possibilità di spostamento tramite cursore dei punti|2|1.0|...|
+  |Req-06|Sviluppo sito web contenente tutte le informazioni e il download dell'applictivo|1|1.0|...|
+  |Req-07|La generazione del fiocco di neve avviene tramite tasto "genera"|1|1.0|...|
+  |Req-08|La generazione avviene in tempo reale"|1|1.0|...|
 
 
 
