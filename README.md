@@ -11,4 +11,4 @@ Per disegnare i fiocchi si parte da un triangolo ritagliabile tramite cursore de
 
 - [Documentazione progetto](Documentazione/Documentazione.md)
 
-- [Diario aggiornato](Diari/adrchi_diario_2019-09-13.md)
+- [Diario aggiornato](Diari/adrchi_fioccodineve_2019-09-20.md)

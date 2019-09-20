@@ -90,7 +90,7 @@ L'inizio del progetto è avvenuto il 3.09.2019 mentre la fine è prevista il 20.
 
   > *As the size and complexity of today’s most modern computer chips
   > increase, new techniques must be developed to effectively design and
-  > create Very Large Scale Integration chips quickly. For this project, a
+  >create Very Large Scale Integration chips quickly. For this project, a
   > new type of hardware compiler is created. This hardware compiler will
   > read a C++ program, and physically design a suitable microprocessor
   > intended for running that specific program. With this new and powerful
@@ -111,29 +111,9 @@ L'inizio del progetto è avvenuto il 3.09.2019 mentre la fine è prevista il 20.
 
 ### Analisi del dominio
 
-  Questo capitolo dovrebbe descrivere il contesto in cui il prodotto verrà
-  utilizzato, da questa analisi dovrebbero scaturire le risposte a quesiti
-  quali ad esempio:
+  Il progetto fiocco di neve verrà sviluppato per uno scopo scolastico per far capire come si gestisce un progetto.
+  Come progetto è stato scelto un programma nel quale si può ritagliare un triangolo a piacimento e da questo verrà generato un fiocco di neve.
 
-  -   Background/Situazione iniziale
-
-  -   Quale è e come è organizzato il contesto in cui il prodotto dovrà
-      funzionare?
-
-  -   Come viene risolto attualmente il problema? Esiste già un prodotto
-      simile?
-
-  -   Chi sono gli utenti? Che bisogni hanno? Come e dove lavorano?
-
-  -   Che competenze/conoscenze/cultura posseggono gli utenti in relazione
-      con il problema?
-
-  -   Esistono convenzioni/standard applicati nel dominio?
-
-  -   Che conoscenze teoriche bisogna avere/acquisire per poter operare
-      efficacemente nel dominio?
-
-  -   …
 
 ### Analisi e specifica dei requisiti
 
