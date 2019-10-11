@@ -1,4 +1,5 @@
 
+import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -23,7 +24,8 @@ public class FioccoDiNeveFrame extends JFrame implements MouseMotionListener, Mo
     private static final int WIDTH_CIRCLE = 16;
     private boolean closed = false;
     private List<Point> posPoints = new ArrayList<Point>();
-    protected static JButton taglia = new JButton("Taglia");
+    protected static Button taglia = new Button("Taglia");
+    protected static Button exit = new Button("Esci");
 
     public FioccoDiNeveFrame(String title) {
         super(title);
@@ -35,6 +37,7 @@ public class FioccoDiNeveFrame extends JFrame implements MouseMotionListener, Mo
         this.addMouseListener(this);
         this.setLayout(null);
         taglia.addActionListener(this);
+        exit.addActionListener(this);
 
     }
 
@@ -42,17 +45,17 @@ public class FioccoDiNeveFrame extends JFrame implements MouseMotionListener, Mo
         FioccoDiNeveFrame fdnf = new FioccoDiNeveFrame("Fiocco Di Neve");
 
         taglia.setActionCommand("Taglia");
-        taglia.setBounds(500, 70, 70, 70);
-        taglia.setOpaque(false);
-        taglia.setContentAreaFilled(false);
-        taglia.setBorderPainted(false);
+        taglia.setBounds(920, 70, 70, 70);
         fdnf.add(taglia);
+        exit.setActionCommand("Esci");
+        exit.setBounds(920, 640, 70, 70);
+        fdnf.add(exit);
 
         fdnf.setVisible(true);
     }
 
     public void paint(Graphics g) {
-
+        super.paint(g);
         //Disegno Sfondo.
         Color azzurro = new Color(79, 101, 163);
         g.setColor(azzurro);
@@ -64,38 +67,62 @@ public class FioccoDiNeveFrame extends JFrame implements MouseMotionListener, Mo
         g.setColor(Color.WHITE);
         g.fillPolygon(xPoints, yPoints, 3);
 
-        //Disegno Linee.
-        for (int i = 0; i < posPoints.size(); i++) {
-            if (closed == false) {
+        if (closed == false) {
+            for (int i = 0; i < posPoints.size(); i++) {
                 g.setColor(Color.RED);
-                g.fillOval((int) (posPoints.get(i).getX() - WIDTH_CIRCLE / 2), (int) (posPoints.get(i).getY() - WIDTH_CIRCLE / 2), WIDTH_CIRCLE, WIDTH_CIRCLE);
-            }
-            g.setColor(Color.GRAY);
-            if (i != 0) {
-                g.setColor(Color.GRAY);
-                g.drawLine((int) posPoints.get(i - 1).getX(), (int) posPoints.get(i - 1).getY(), (int) posPoints.get(i).getX(), (int) posPoints.get(i).getY());
-                if (closed == false) {
-                    g.setColor(Color.YELLOW);
-                } else {
+                
+                //Disegno cerchi
+                g.fillOval((int) (posPoints.get(i).getX() - WIDTH_CIRCLE / 2), 
+                        (int) (posPoints.get(i).getY() - WIDTH_CIRCLE / 2), 
+                        WIDTH_CIRCLE, 
+                        WIDTH_CIRCLE
+                );
+                
+                if (i != 0) {
                     g.setColor(Color.GRAY);
+                    
+                    //Disegno righe
+                    g.drawLine((int) posPoints.get(i - 1).getX(), 
+                            (int) posPoints.get(i - 1).getY(), 
+                            (int) posPoints.get(i).getX(), 
+                            (int) posPoints.get(i).getY()
+                    );
+                    
+                    g.setColor(Color.YELLOW);
+                    
+                    //Disegno riga di chiusura
+                    g.drawLine(
+                            (int) posPoints.get(posPoints.size() - 1).getX(),
+                            (int) posPoints.get(posPoints.size() - 1).getY(), 
+                            (int) posPoints.get(0).getX(), 
+                            (int) posPoints.get(0).getY()
+                    );
+                    
                 }
-                g.drawLine((int) posPoints.get(posPoints.size() - 1).getX(), (int) posPoints.get(posPoints.size() - 1).getY(), (int) posPoints.get(0).getX(), (int) posPoints.get(0).getY());
             }
-        }
-        if (closed == true) {
+        } else {
             int[] fillX = new int[posPoints.size()];
             int[] fillY = new int[posPoints.size()];
             for (int i = 0; i < posPoints.size(); i++) {
                 fillX[i] = posPoints.get(i).x;
                 fillY[i] = posPoints.get(i).y;
             }
-            Polygon fill = new Polygon(fillX, fillY, posPoints.size());
+            Polygon fill = new Polygon(fillX, 
+                    fillY, 
+                    posPoints.size()
+            );
             g.setColor(azzurro);
             g.fillPolygon(fill);
         }
     }
 
     public void mouseDragged(MouseEvent e) {
+        for (int i = 0; i < posPoints.size(); i++) {
+            if (e.getPoint().distance(posPoints.get(i)) < WIDTH_CIRCLE / 2) {
+                posPoints.set(i, e.getPoint());
+                repaint();
+            }
+        }
     }
 
     public void mouseMoved(MouseEvent e) {
@@ -108,8 +135,14 @@ public class FioccoDiNeveFrame extends JFrame implements MouseMotionListener, Mo
                 posPoints.add(new Point(e.getX(), e.getY()));
                 repaint();
             }
+        } else if (e.getButton() == MouseEvent.BUTTON3) {
+            for (int i = 0; i < posPoints.size(); i++) {
+                if (e.getPoint().distance(posPoints.get(i)) < WIDTH_CIRCLE / 2) {
+                    posPoints.remove(i);
+                    repaint();
+                }
+            }
         }
-
     }
 
     public void mousePressed(MouseEvent e) {
@@ -125,9 +158,11 @@ public class FioccoDiNeveFrame extends JFrame implements MouseMotionListener, Mo
     }
 
     public void actionPerformed(ActionEvent e) {
-        if ("Taglia".equals(e.getActionCommand())) {
+        if ("Taglia".equals(e.getActionCommand()) && posPoints.size() > 2) {
             this.closed = true;
             repaint();
+        }else if ("Esci".equals(e.getActionCommand())) {
+            dispose();
         }
     }
 }
