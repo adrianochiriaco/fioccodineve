@@ -29,7 +29,7 @@ public class SmartPolygon implements MouseMotionListener, MouseListener {
     /**
      * La larghezza del cerchio generato sul vertice del poligono.
      */
-    private int widthCircle = 5;
+    private int widthCircle = 2;
 
     /**
      * Lista di listener.
@@ -46,6 +46,38 @@ public class SmartPolygon implements MouseMotionListener, MouseListener {
         this.widthCircle = widthCircle;
     }
 
+    /**
+     * Ritorna le coordinate X dei vertici di uno smartPolygon.
+     * @return Ritorna le coordinate X dei vertici di uno smartPolygon.
+     */
+    public int[] getVertexesX(){
+        int[] vertexesX = new int[this.vertexes.size()];
+        for(int i = 0; i < vertexesX.length; i++){
+            vertexesX[i] = (int)this.vertexes.get(i).getX();
+        }
+        return vertexesX;
+    }
+    
+    /**
+     * Ritorna le coordinate X dei vertici di uno smartPolygon.
+     * @return Ritorna le coordinate X dei vertici di uno smartPolygon.
+     */
+    public int[] getVertexesY(){
+        int[] vertexesY = new int[this.vertexes.size()];
+        for(int i = 0; i < vertexesY.length; i++){
+            vertexesY[i] = (int)this.vertexes.get(i).getY();
+        }
+        return vertexesY;
+    }
+    
+    /**
+     * Ritorna la grandezza di un smartPolygon.
+     * @return Ritorna la grandezza di un smartPolygon. 
+     */
+    public int getSize(){
+        return this.vertexes.size();
+    }
+    
     /**
      * Metodo di painting.
      *
