@@ -9,7 +9,7 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|---------------------------------------------------------|
-|11:35 - 16:30 |Sviluppo classi  + aggiornamento  Documentazione  |
+|11:35 - 16:30 |Inserimento,rimozione e spostamento punti  + aggiornamento  Documentazione  |
 
 
 ##  Problemi riscontrati e soluzioni adottate
@@ -17,7 +17,7 @@ Ho avuto un problema nella modifica del metodo MouseDragged() perchè non mi ril
 dl tasto così ho risolto il problema.
 
 ##  Punto della situazione rispetto alla pianificazione
-Mi trovo perfettamente posizionato rispetto la progemmazione
+Non ho avuto tempo per sviluppare la generazione del fiocco di neve.
 
 ## Programma di massima per la prossima giornata di lavoro
-- Sviluppo classi
+- Generazione fiocco di neve

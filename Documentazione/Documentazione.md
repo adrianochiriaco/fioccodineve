@@ -57,12 +57,14 @@
    -  Luca Muggiasca (luca.muggiasca@edu.ti.ch)
    -  Geo Petrini (geo.petrini@edu.ti.ch)
 
-L'inizio del progetto è avvenuto il 3.09.2019 mentre la fine è prevista il 20.12.2019.
+La data d'inizio del progetto è il 3.09.2019 mentre la fine è prevista per il 20.12.2019.
 
 
 
 ### Abstract
 
+  Il seguente documento contiene tutte le informazioni riguradrante il progetto *Fiocco di neve*
+  e
   E’ una breve e accurata rappresentazione dei contenuti di un documento,
   senza notazioni critiche o valutazioni. Lo scopo di un abstract efficace
   dovrebbe essere quello di far conoscere all’utente il contenuto di base
@@ -102,56 +104,21 @@ L'inizio del progetto è avvenuto il 3.09.2019 mentre la fine è prevista il 20.
 
 ### Scopo
 
-  Lo scopo del progetto (scopi didattici/scopi operativi). Dovrebbe
-  descrivere il mandato, ma non vanno ricopiate le informazioni del
-  quaderno dei compiti (che va invece allegato).
+  Lo scopo di questo progetto è quello di imparare a gestire un progetto con
+  tutti gli strumenti ausiliari.
 
 
 ## Analisi
 
 ### Analisi del dominio
 
-  Il progetto fiocco di neve verrà sviluppato per uno scopo scolastico per far capire come si gestisce un progetto.
-  Come progetto è stato scelto un programma nel quale si può ritagliare un triangolo a piacimento e da questo verrà generato un fiocco di neve.
+  Il progetto fiocco di neve verrà sviluppato per uno scopo scolastico per far
+  capire come si gestisce un progetto.
+  Come progetto è stato scelto un programma nel quale si può ritagliare un
+  triangolo a piacimento e da questo verrà generato un fiocco di neve.
 
 
 ### Analisi e specifica dei requisiti
-
-  Il progettista, dopo aver ricevuto il mandato, in collaborazione con il
-  committente redige una lista di requisiti. Durante questi incontri,
-  tramite interviste (da inserire nei diari), il progettista deve cercare
-  di rispondere alle seguenti domande:
-
-  -   Quali sono i bisogni del committente?
-
-  -   Quali funzioni deve svolgere il prodotto?
-
-  -   Come devono essere implementate?
-
-  -   L’utente, come vorrebbe/dovrebbe interagire con il prodotto?
-
-  -   Come verrà utilizzato il prodotto?
-
-  -   Che tipo di interfaccia si immagina?
-
-  -   Che prestazioni minime deve fornire il prodotto?
-
-  -   Che grado di sicurezza deve avere il prodotto?
-
-  -   …
-
-  In base alla lista dei requisiti e all’analisi degli stessi, il
-  progettista redige una *specifica dei requisiti* in cui elenca e
-  descrive in modo dettagliato quali sono le funzionalità che il prodotto
-  fornirà. La specifica dovrebbe essere abbastanza dettagliata da poter
-  essere utilizzata come base per lo sviluppo, ma non troppo; ad esempio
-  non dovrebbe contenere dettagli di implementazione, o definizioni
-  dettagliate dell’interfaccia grafica a meno che questi non siano
-  considerati cruciali. Non si deve scordare che i requisiti non
-  rappresentano delle attività bensì delle caratteristiche che il prodotto
-  dovrà possedere.
-
-
 
 
   |**ID**	|**Nome**			|**Priorità**|**Vers**|**Note**  |
@@ -180,89 +147,42 @@ L'inizio del progetto è avvenuto il 3.09.2019 mentre la fine è prevista il 20.
 
 
 
-
-**Spiegazione elementi tabella dei requisiti:**
-
-**ID**: identificativo univoco del requisito
-
-**Nome**: breve descrizione del requisito
-
-**Priorità**: indica l’importanza di un requisito nell’insieme del
-progetto, definita assieme al committente. Ad esempio poter disporre di
-report con colonne di colori diversi ha priorità minore rispetto al
-fatto di avere un database con gli elementi al suo interno. Solitamente
-si definiscono al massimo di 2-3 livelli di priorità.
-
-**Versione**: indica la versione del requisito. Ogni modifica del
-requisito avrà una versione aggiornata.
-
-Sulla documentazione apparirà solamente l’ultima versione, mentre le
-vecchie dovranno essere inserite nei diari.
-
-**Note**: eventuali osservazioni importanti o riferimenti ad altri
-requisiti.
-
-**Sotto requisiti**: elementi che compongono il requisito.
-
-
 ### Use case
 
-I casi d’uso rappresentano l’interazione tra i vari attori e le
-funzionalità del prodotto.
+![UseCase](Images/UseCase.PNG)
 
 ### Pianificazione
 
-Prima di stabilire una pianificazione bisogna avere almeno una vaga idea
-del modello di sviluppo che si intende adottare. In questa sezione
-bisognerà inserire il modello concettuale di sviluppo che si seguirà
-durante il progetto. Gli elementi di riferimento per una buona
-pianificazione derivano da una scomposizione top-down della problematica
-del progetto.
-
-La pianificazione può essere rappresentata mediante un diagramma di
-Gantt.
-
-Se si usano altri metodi di pianificazione (es scrum), dovranno apparire
-in questo capitolo.
+![GanttPreventivo](Images/GanttPreventivo.PNG)
 
 ### Analisi dei mezzi
 
-Elencare e *descrivere* i mezzi disponibili per la realizzazione del
-progetto. Ricordarsi di sempre descrivere nel dettaglio le versioni e il
-modello di riferimento.
-
-SDK, librerie, tools utilizzati per la realizzazione del progetto e
-eventuali dipendenze.
-
-Su quale piattaforma dovrà essere eseguito il prodotto? Che hardware
-particolare è coinvolto nel progetto? Che particolarità e limitazioni
-presenta? Che hw sarà disponibile durante lo sviluppo?
+I mezzi utilizzati per sviluppare questo progetto sono java, che è anche il
+linguaggio in cui è stato scritto il programma e Netbeans che è la piattaforma
+che ho utilizzato per la stesura del codice.
 
 ## Progettazione
 
-Questo capitolo descrive esaustivamente come deve essere realizzato il
-prodotto fin nei suoi dettagli. Una buona progettazione permette
-all’esecutore di evitare fraintendimenti e imprecisioni
-nell’implementazione del prodotto.
+Il primo passaggio da realizzare è la stesura del Gannt preventivo. Dopo fatto
+ciò inizierò a schizzare una bozza dell'UML del mio programma e inizerò a fare delle
+ricerche sui metodi che mi saranno utili durante la scrittura del codice.
+Dopo aver fatto ciò inizierò a sviluppare le classi.
+Quando finalment le classi saranno solide implementerò l'interfaccia grafica e
+cercherô di ottenere il prodotto finale.
+Una volta finito il programma verificherò che tutti i requisiti siano stati
+soddisfatti e da lì in poi inizierà lo sviluppo del sito web.
+Per quanto riguarda la pagine web prima di scrivere il codice abbozero un diesgno del sito sulla carta
+e poi cercherò su internet dei bootstrap che mi permetteranno di realizzarlo.
+L'ultimo passaggio sarà quello di pubblicare il prodotto online.
+
 
 ### Design dell’architettura del sistema
 
-Descrive:
-
--   La struttura del programma/sistema lo schema di rete...
-
--   Gli oggetti/moduli/componenti che lo compongono.
-
--   I flussi di informazione in ingresso ed in uscita e le
-    relative elaborazioni. Può utilizzare *diagrammi di flusso dei
-    dati* (DFD).
-
--   Eventuale sitemap
-
-### Design dei dati e database
-
-Descrizione delle strutture di dati utilizzate dal programma in base
-agli attributi e le relazioni degli oggetti in uso.
+L'architettura è composta da quattro classi:
+- SmartPolygon
+- SmartPolygonListener
+- SnowFlakePanel
+- SnowFlakeForm
 
 ### Schema E-R, schema logico e descrizione.
 
@@ -271,68 +191,63 @@ versione, mentre le vecchie saranno sui diari.
 
 ### Design delle interfacce
 
-Descrizione delle interfacce interne ed esterne del sistema e
-dell’interfaccia utente. La progettazione delle interfacce è basata
-sulle informazioni ricavate durante la fase di analisi e realizzata
-tramite mockups.
-
+Questa è la mia interfaccia grafica:
+![GUI](Images/GUI.PNG)
 ### Design procedurale
 
-Descrive i concetti dettagliati dell’architettura/sviluppo utilizzando
-ad esempio:
-
--   Diagrammi di flusso e Nassi.
-
--   Tabelle.
-
--   Classi e metodi.
-
--   Tabelle di routing
-
--   Diritti di accesso a condivisioni …
-
-Questi documenti permetteranno di rappresentare i dettagli procedurali
-per la realizzazione del prodotto.
+![UML](Images/UML.PNG)
 
 ## Implementazione
 
-In questo capitolo dovrà essere mostrato come è stato realizzato il
-lavoro. Questa parte può differenziarsi dalla progettazione in quanto il
-risultato ottenuto non per forza può essere come era stato progettato.
+Il programma è stato sviluppato con 4 classi.
+La classe principale è SnowFlakePanel, in questo pannello si eseguono tutte le operazioni
+sul triangolo e si può generare il fiocco. Quando si taglia il triangolo si creano dei poligoni che
+sono oggetti SmartPolygon. Questi poligoni sono definiti smart perchè grazie all'interface SmartPolygonListener
+generano degli eventi quando viene eliminato un vertice o spostato. C'è anche un form principale dove ci sono dei bottoni che permettono di interagire con il triangolo.
 
-Sulla base di queste informazioni il lavoro svolto dovrà essere
-riproducibile.
 
-In questa parte è richiesto l’inserimento di codice sorgente/print
-screen di maschere solamente per quei passaggi particolarmente
-significativi e/o critici.
-
-Inoltre dovranno essere descritte eventuali varianti di soluzione o
-scelte di prodotti con motivazione delle scelte.
-
-Non deve apparire nessuna forma di guida d’uso di librerie o di
-componenti utilizzati. Eventualmente questa va allegata.
-
-Per eventuali dettagli si possono inserire riferimenti ai diari.
 
 ## Test
 
 ### Protocollo di test
 
-Definire in modo accurato tutti i test che devono essere realizzati per
-garantire l’adempimento delle richieste formulate nei requisiti. I test
-fungono da garanzia di qualità del prodotto. Ogni test deve essere
-ripetibile alle stesse condizioni.
 
 
 |Test Case      | TC-001                               |
 |---------------|--------------------------------------|
+|**Nome**       |Taglio triangolo |
+|**Riferimento**|REQ-05                               |
+|**Descrizione**|Deve essere possibile tagliare il triangolo utilizzando il mouse. |
+|**Prerequisiti**||
+|**Procedura**     |Avviare l'applicazione fare click con il tasto sinistro sopra al triangolo. |
+|**Risultati attesi** |Si creano dei punti che definiscono il poligono di taglio |
+
+|Test Case      | TC-002                               |
+|---------------|--------------------------------------|
+|**Nome**       |Spostamento punti |
+|**Riferimento**|REQ-11                               |
+|**Descrizione**|Deve essere possibile spostare i punti. |
+|**Prerequisiti**|Aver creato un poligono di taglio|
+|**Procedura**     |Tenere premuto con il tasto sinistro su un punto e trascinare nella posizione in cui si vuole spostare|
+|**Risultati attesi** |Il punto si sposta dove viene trascinato|
+
+|Test Case      | TC-003                               |
+|---------------|--------------------------------------|
+|**Nome**       |Eliminazione punti|
+|**Riferimento**|REQ-12                               |
+|**Descrizione**|Deve essere possibile rimuovere i punti. |
+|**Prerequisiti**|Aver creato un poligono di taglio|
+|**Procedura**     |Premere con il tasto destro su un punto che si vuole eliminare|
+|**Risultati attesi** |Il punto si elimina|
+
+|Test Case      | TC-004                               |
+|---------------|--------------------------------------|
 |**Nome**       |Import a card, but not shown with the GUI |
-|**Riferimento**|REQ-012                               |
-|**Descrizione**|Import a card with KIC, KID and KIK keys with no obfuscation, but not shown with the GUI |
-|**Prerequisiti**|Store on local PC: Profile\_1.2.001.xml (appendix n\_n) and Cards\_1.2.001.txt (appendix n\_n) |
-|**Procedura**     | - Go to “Cards manager” menu, in main page click “Import Profiles” link, Select the “1.2.001.xml” file, Import the Profile - Go to “Cards manager” menu, in main page click “Import Cards” link, Select the “1.2.001.txt” file, Delete the cards, Select the “1.2.001.txt” file, Import the cards |
-|**Risultati attesi** |Keys visible in the DB (OtaCardKey) but not visible in the GUI (Card details) |
+|**Riferimento**|REQ-21                              |
+|**Descrizione**|Deve essere possibile creare più poligoni di taglio. |
+|**Prerequisiti**|Aver creato un poligono di taglio|
+|**Procedura**     |Creare un altro poligono di taglio dopo aver chiuso quello precedente.|
+|**Risultati attesi** |I due poligoni di taglio coesistono e sono indipendenti tra loro|
 
 
 ### Risultati test
@@ -345,10 +260,8 @@ l’errore con eventuali ipotesi di correzione.
 
 ### Mancanze/limitazioni conosciute
 
-Descrizione con motivazione di eventuali elementi mancanti o non
-completamente implementati, al di fuori dei test case. Non devono essere
-riportati gli errori e i problemi riscontrati e poi risolti durante il
-progetto.
+Mancanze:
+Nel software non sono state implmentate le funzionalità di esportazione delle immagini in PNG e SVG.
 
 ## Consuntivo
 
@@ -365,72 +278,19 @@ stato una perdita di tempo? I risultati ottenuti sono generali,
 facilmente generalizzabili o sono specifici di un caso particolare? ecc
 
 ### Sviluppi futuri
-  Migliorie o estensioni che possono essere sviluppate sul prodotto.
+  -
 
 ### Considerazioni personali
-  Cosa ho imparato in questo progetto? ecc
+  Con questo progetto ho allenato le mie doti nel gestire un progetto
 
 ## Bibliografia
 
 ### Bibliografia per articoli di riviste
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
 
-2.  Titolo dell’articolo (tra virgolette),
-
-3.  Titolo della rivista (in italico),
-
-4.  Anno e numero
-
-5.  Pagina iniziale dell’articolo,
-
-### Bibliografia per libri
-
-
-1.  Cognome e nome (o iniziali) dell’autore o degli autori, o nome
-    dell’organizzazione,
-
-2.  Titolo del libro (in italico),
-
-3.  ev. Numero di edizione,
-
-4.  Nome dell’editore,
-
-5.  Anno di pubblicazione,
-
-6.  ISBN.
 
 ### Sitografia
 
-1.  URL del sito (se troppo lungo solo dominio, evt completo nel
-    diario),
-
-2.  Eventuale titolo della pagina (in italico),
-
-3.  Data di consultazione (GG-MM-AAAA).
-
-**Esempio:**
-
--   http://standards.ieee.org/guides/style/section7.html, *IEEE
-    Standards Style Manual*, 07-06-2008.
 
 ## Allegati
 
-Elenco degli allegati, esempio:
-
 -   Diari di lavoro
-
--   Codici sorgente/documentazione macchine virtuali
-
--   Istruzioni di installazione del prodotto (con credenziali
-    di accesso) e/o di eventuali prodotti terzi
-
--   Documentazione di prodotti di terzi
-
--   Eventuali guide utente / Manuali di utilizzo
-
--   Mandato e/o Qdc
-
--   Prodotto
-
--   …

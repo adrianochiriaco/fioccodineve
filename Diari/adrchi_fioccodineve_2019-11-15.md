@@ -9,13 +9,13 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|---------------------------------------------------------|
-|11:35 - 16:30 |Modifica struttura classi + aggiornamento  Documentazione  |
+|11:35 - 16:30 |Fiocco generato + sviluppo sito web + aggiornamento  Documentazione  |
 
 
 ##  Problemi riscontrati e soluzioni adottate
 Nessun problema riscontrato. Giornata molto profiqua.
 ##  Punto della situazione rispetto alla pianificazione
-Mi trovo perfettamente posizionato rispetto la programmazione
+Sono in ritardo.
 
 ## Programma di massima per la prossima giornata di lavoro
-- Sviluppo classi
+- Sviluppo sito web

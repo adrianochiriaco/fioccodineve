@@ -9,14 +9,14 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|---------------------------------------------------------|
-|11:35 - 16:30 |Sviluppo classi  + aggiornamento  Documentazione  |
+|11:35 - 16:30 |Inserimento di piu poligoni +Generazione fiocco di neve  + aggiornamento  Documentazione  |
 
 
 ##  Problemi riscontrati e soluzioni adottate
 Ho avuto difficoltà nell'implementazione nella multitudine di poligoni ma dopo aver implementato la classe Area sono riuscito a risolvere.
 
 ##  Punto della situazione rispetto alla pianificazione
-Mi trovo perfettamente posizionato rispetto la progemmazione
+Sono in ritardo
 
 ## Programma di massima per la prossima giornata di lavoro
 - Sviluppo classi

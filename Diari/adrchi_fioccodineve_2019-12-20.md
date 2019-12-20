@@ -2,22 +2,21 @@
 
 # Fiocco di neve | Diario di lavoro
 ##### Adriano Chiriacò
-### CPT Trevano, 13.09.2019
+### CPT Trevano, 20.12.2019
 
 ## Lavori svolti
 
 
 |Orario        |Lavoro svolto                 |
 |--------------|---------------------------------------------------------|
-|14.30 - 15.30 |Stesura requisiti all'interno della documentazione          |
-|15:30 - 16.30 |Inizio completamento documentazione|
+|11:35 - 16:30 |Sviluppo sito web  + aggiornamento  Documentazione  |
 
 
 ##  Problemi riscontrati e soluzioni adottate
 -
 
 ##  Punto della situazione rispetto alla pianificazione
-Mi trovo perfettamente posizionato rispetto la progemmazione
+Sono un po indietro
 
 ## Programma di massima per la prossima giornata di lavoro
-- Creazione Gantt
+- Sviluppo siito web + consegna progetto.

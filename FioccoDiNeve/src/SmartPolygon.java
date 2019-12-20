@@ -19,12 +19,12 @@ public class SmartPolygon implements MouseMotionListener, MouseListener {
     /**
      * Lista di vertici che definiscono il poligono.
      */
-    private ArrayList<Point> vertexes = new ArrayList<Point>();
+    public ArrayList<Point> vertexes = new ArrayList<Point>();
 
     /**
      * Definisce il colore dei poligoni.
      */
-    private static final Color POLYGONCOLOR = Color.RED;
+    private static final Color POLYGONCOLOR = new Color(1,86,124);
 
     /**
      * La larghezza del cerchio generato sul vertice del poligono.
@@ -48,42 +48,46 @@ public class SmartPolygon implements MouseMotionListener, MouseListener {
 
     /**
      * Ritorna le coordinate X dei vertici di uno smartPolygon.
+     *
      * @return Ritorna le coordinate X dei vertici di uno smartPolygon.
      */
-    public int[] getVertexesX(){
+    public int[] getVertexesX() {
         int[] vertexesX = new int[this.vertexes.size()];
-        for(int i = 0; i < vertexesX.length; i++){
-            vertexesX[i] = (int)this.vertexes.get(i).getX();
+        for (int i = 0; i < vertexesX.length; i++) {
+            vertexesX[i] = (int) this.vertexes.get(i).getX();
         }
         return vertexesX;
     }
-    
+
     /**
      * Ritorna le coordinate X dei vertici di uno smartPolygon.
+     *
      * @return Ritorna le coordinate X dei vertici di uno smartPolygon.
      */
-    public int[] getVertexesY(){
+    public int[] getVertexesY() {
         int[] vertexesY = new int[this.vertexes.size()];
-        for(int i = 0; i < vertexesY.length; i++){
-            vertexesY[i] = (int)this.vertexes.get(i).getY();
+        for (int i = 0; i < vertexesY.length; i++) {
+            vertexesY[i] = (int) this.vertexes.get(i).getY();
         }
         return vertexesY;
     }
-    
+
     /**
      * Ritorna la grandezza di un smartPolygon.
-     * @return Ritorna la grandezza di un smartPolygon. 
+     *
+     * @return Ritorna la grandezza di un smartPolygon.
      */
-    public int getSize(){
+    public int getSize() {
         return this.vertexes.size();
     }
-    
+
     /**
      * Metodo di painting.
      *
      * @param g Il componente grafico.
      */
     public void paintComponent(Graphics g) {
+        Color disegno = new Color(247, 89, 129);
         int[] vertexesX = new int[this.vertexes.size()];
         int[] vertexesY = new int[this.vertexes.size()];
         for (int i = 0; i < this.vertexes.size(); i++) {
@@ -92,10 +96,10 @@ public class SmartPolygon implements MouseMotionListener, MouseListener {
         }
         g.setColor(POLYGONCOLOR);
         g.fillPolygon(vertexesX, vertexesY, vertexes.size());
-        
-            for(int i = 0; i < vertexes.size(); i++){
-                g.fillOval((int)vertexes.get(i).getX()- widthCircle/2, (int)vertexes.get(i).getY()-widthCircle/2, widthCircle, widthCircle);
-            }
+        g.setColor(Color.BLACK);
+        for (int i = 0; i < vertexes.size(); i++) {
+            g.fillOval((int) vertexes.get(i).getX() - widthCircle / 2, (int) vertexes.get(i).getY() - widthCircle / 2, widthCircle, widthCircle);
+        }
     }
 
     public void mouseDragged(MouseEvent e) {

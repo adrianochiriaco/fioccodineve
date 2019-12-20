@@ -9,14 +9,13 @@
 
 |Orario        |Lavoro svolto                 |
 |--------------|---------------------------------------------------------|
-|11:35 - 16:30 |Implementazione JPANEL  + aggiornamento  Documentazione  |
+|11:35 - 16:30 |Generazione fiocco  + aggiornamento  Documentazione  |
 
 
 ##  Problemi riscontrati e soluzioni adottate
-Ho avuto difficoltà nell'implementazione del JPanel.
-Non sono riuscito a risolvere per ora.
+Non riesco a generare il fiocco correttamente
 ##  Punto della situazione rispetto alla pianificazione
-Mi trovo perfettamente posizionato rispetto la progemmazione
+Sono in ritardo
 
 ## Programma di massima per la prossima giornata di lavoro
 - Sviluppo classi

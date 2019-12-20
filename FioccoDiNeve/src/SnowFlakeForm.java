@@ -31,8 +31,12 @@ public class SnowFlakeForm extends java.awt.Frame {
         bCut = new javax.swing.JButton();
         bGenerate = new javax.swing.JButton();
         bSavePoints = new javax.swing.JButton();
+        bLoadPoints = new javax.swing.JButton();
+        bReset = new javax.swing.JButton();
 
+        setMinimumSize(new java.awt.Dimension(1024, 768));
         setPreferredSize(new java.awt.Dimension(1024, 768));
+        setTitle("SnowFlake generator");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
@@ -40,7 +44,7 @@ public class SnowFlakeForm extends java.awt.Frame {
         });
         add(snowFlakePanel, java.awt.BorderLayout.CENTER);
 
-        ButtonsPanel.setLayout(new java.awt.GridLayout(5, 0));
+        ButtonsPanel.setLayout(new java.awt.GridLayout(7, 0));
 
         bCut.setText("Cut Triangle");
         bCut.addActionListener(new java.awt.event.ActionListener() {
@@ -51,6 +55,11 @@ public class SnowFlakeForm extends java.awt.Frame {
         ButtonsPanel.add(bCut);
 
         bGenerate.setText("Generate SnowFlake");
+        bGenerate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bGenerateActionPerformed(evt);
+            }
+        });
         ButtonsPanel.add(bGenerate);
 
         bSavePoints.setText("Save Points");
@@ -60,6 +69,22 @@ public class SnowFlakeForm extends java.awt.Frame {
             }
         });
         ButtonsPanel.add(bSavePoints);
+
+        bLoadPoints.setText("Load Points");
+        bLoadPoints.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bLoadPointsActionPerformed(evt);
+            }
+        });
+        ButtonsPanel.add(bLoadPoints);
+
+        bReset.setText("Reset");
+        bReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bResetActionPerformed(evt);
+            }
+        });
+        ButtonsPanel.add(bReset);
 
         add(ButtonsPanel, java.awt.BorderLayout.EAST);
 
@@ -83,11 +108,25 @@ public class SnowFlakeForm extends java.awt.Frame {
         snowFlakePanel.savePoints();
     }//GEN-LAST:event_bSavePointsActionPerformed
 
+    private void bLoadPointsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bLoadPointsActionPerformed
+        snowFlakePanel.loadPoints();
+    }//GEN-LAST:event_bLoadPointsActionPerformed
+
+    private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed
+        bGenerate.setEnabled(false);
+        snowFlakePanel.taglia();
+        bCut.setEnabled(true);
+        snowFlakePanel.reset();
+    }//GEN-LAST:event_bResetActionPerformed
+
+    private void bGenerateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bGenerateActionPerformed
+        snowFlakePanel.genera();
+    }//GEN-LAST:event_bGenerateActionPerformed
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
+    public static void main(String args[]) {        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new SnowFlakeForm().setVisible(true);
             }
@@ -99,6 +138,8 @@ public class SnowFlakeForm extends java.awt.Frame {
     private javax.swing.JPanel ButtonsPanel;
     private javax.swing.JButton bCut;
     private javax.swing.JButton bGenerate;
+    private javax.swing.JButton bLoadPoints;
+    private javax.swing.JButton bReset;
     private javax.swing.JButton bSavePoints;
     private SnowFlakePanel snowFlakePanel;
     // End of variables declaration//GEN-END:variables
